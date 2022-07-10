@@ -1,0 +1,20 @@
+void selectionSort(int arr[], int n)
+    {
+       //code here
+      if(n==1)
+        return;
+    for(int i=0;i<n-1;i++)
+    {
+        int min=arr[i];
+        int minindex=i;
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[j]<min)
+            {
+                min=arr[j];
+                minindex=j;
+            }
+        }
+        swap(arr[i],arr[minindex]);
+    }
+    }
